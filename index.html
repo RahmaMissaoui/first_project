@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
+    <div id="scoreboard">
+        <span>Player X: <span id="score-x">0</span></span>
+        <span>Draws: <span id="score-draw">0</span></span>
+        <span>Player O: <span id="score-o">0</span></span>
+    </div>
     <div id="game-board">
         <div class="cell" data-index="0"></div>
         <div class="cell" data-index="1"></div>
@@ -21,6 +26,11 @@
     </div>
     <div id="message"></div>
     <button id="reset-button">Reset Game</button>
+    <button id="reset-scores">Reset Scores</button>
+    <button id="toggle-music">Toggle Music</button>
+    <audio id="click-sound" src="click.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="background-music" src="loop.mp3" loop></audio>
     <script src="script.js"></script>
 </body>
 </html>
